@@ -40,10 +40,10 @@
 #             (id, name, age, email)
 #         )
 
-#         print("✅ Student added successfully!")
+#         print(" Student added successfully!")
 
 #     except Exception as e:
-#         print("❌ Error adding student:", e)
+#         print(" Error adding student:", e)
 
 # # -------------------------------
 # # View Students
@@ -74,9 +74,9 @@
 #     )
 
 #     if cursor.rowcount > 0:
-#         print("✅ Student updated successfully!")
+#         print(" Student updated successfully!")
 #     else:
-#         print("❌ Student not found.")
+#         print(" Student not found.")
 
 # # -------------------------------
 # # Delete Student
@@ -87,9 +87,9 @@
 #     cursor.execute("DELETE FROM students WHERE id=%s", (id,))
 
 #     if cursor.rowcount > 0:
-#         print("✅ Student deleted successfully!")
+#         print(" Student deleted successfully!")
 #     else:
-#         print("❌ Student not found.")
+#         print(" Student not found.")
 
 # # -------------------------------
 # # Main Program
@@ -101,7 +101,7 @@
 #         create_table(cursor)
 #         connection.commit()
 
-#         print("✅ Connected to PostgreSQL")
+#         print(" connected to PostgreSQL")
 
 #         while True:
 #             print("\n===== Student Management System =====")
@@ -125,7 +125,7 @@
 #                 delete_student(cursor)
 #                 connection.commit()
 #             elif choice == '5':
-#                 print("👋 Exiting system...")
+#                 print(" Exiting system...")
 #                 break
 #             else:
 #                 print("Invalid choice. Try again.")
@@ -137,12 +137,12 @@
 #         if 'connection' in locals():
 #             cursor.close()
 #             connection.close()
-#             print("🔒 Connection closed.")
+#             print(" Connection closed.")
 
 # if __name__ == "__main__":
 #     main()
 
-# # IN this code only add button is work properly
+# # IN this code only add button is work properly ,change the code for update and delete button is work properly by the help of select item from the list
 # import tkinter as tk
 # from tkinter import messagebox, ttk
 # import psycopg2
